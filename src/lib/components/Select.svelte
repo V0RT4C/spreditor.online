@@ -24,9 +24,9 @@
         `}
         >
         <span>{selectedOption.name}</span>
-        <span class="absolute top-1/2 -translate-y-[44%] right-2 m-auto">
-            <i class="block bx bx-chevron-up relative top-[3px]" />
-            <i class="bx bx-chevron-down relative bottom-[3px]" />
+        <span class="absolute top-1/2 -translate-y-[44%] right-2 m-auto flex flex-col items-center">
+            <i class="bx bx-chevron-up relative top-[2px]" />
+            <i class="bx bx-chevron-down relative bottom-[2px]" />
         </span>
     </div>
     {#if showOptions}

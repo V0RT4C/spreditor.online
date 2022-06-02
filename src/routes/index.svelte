@@ -120,6 +120,7 @@ import CompileSpriteModal from './_compile_sprite_modal.svelte';
 import MobileDrawer from './_mobile_drawer.svelte';
 import GoToTop from '$lib/components/GoToTop.component.svelte';
 import Pagination from '$lib/components/Pagination.svelte';
+import SnackbarComponentModule from '$lib/components/singletons/Snackbar.component.svelte';
 import { Sprite } from '$lib/sprite/Sprite';
 import { createSnackbar } from '../store/Snackbar.store';
 import { getNominalSpritesPerPage } from './sprEditor.lib';
@@ -127,10 +128,8 @@ import { SpritesContainer } from '$lib/sprite/SpritesContainer';
 
 import '../app.css';
 import '../assets/ots-font.css';
-import '../assets/martel-font.css';
 import '../assets/neutral_face-font.css';
-import '../assets/light_pixel_7-font.css';
-import SnackbarComponentModule from '$lib/components/singletons/Snackbar.component.svelte';
+import '../assets/boxicons.min.css';
 
 let hasLoadedSprites : boolean = false;
 let hasGeneratedCompressedPixels : boolean = false;

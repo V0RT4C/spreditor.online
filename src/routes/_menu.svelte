@@ -15,7 +15,7 @@
             />
         </div>
         <div class="lg:relative lg:top-[-10px] flex justify-end items-center px-2 gap-2 float-right">
-            <div class="w-20">
+            <div class="w-28">
                 <Select 
                     options={[{ name: 'Show all', value: 'all' }, { name: 'Show empty', value: 'empty' }]}
                     selectedOption={{ name: 'Show all', value: 'all' }}
