@@ -1,11 +1,11 @@
-<div class={`mt-4 bg-primary w-full border border-solid border-primary rounded-lg p-2 grid grid-cols-12`}>
-    <div class="col-span-2 lg:col-span-3 flex justify-start items-center px-2">
-        <button on:click={onAddSprite} class="border border-solid border-primary rounded-lg flex justify-center items-center py-0.5 px-3 cursor-pointer select-none">
-            <span class="relative text-2xl font-bold text-accent">+</span>
+<div class={`mt-4 bg-primary w-full border border-solid border-primary rounded-lg p-2 h-16 flex lg:block justify-between items-center`}>
+    <div class="lg:relative lg:top-[4px] flex justify-start items-center px-2 float-left">
+        <button on:click={onAddSprite} class="border border-solid bg-secondary border-primary rounded-lg flex justify-center items-center py-0.5 px-3 cursor-pointer select-none">
+            <span class="relative top-[-1px] text-2xl font-bold text-accent">+</span>
         </button>
     </div>
     {#if hasLoadedSprites}
-        <div class="hidden lg:col-span-4 lg:flex items-center justify-center">
+        <div class="hidden lg:flex items-center justify-center lg:relative lg:top-[15px]">
             <Pagination 
                 showingStart={startIndex === 0 ? startIndex + 1 : startIndex}
                 showingEnd={endIndex}
@@ -14,7 +14,7 @@
                 on:prev={sprEditorStore.prevPage}
             />
         </div>
-        <div class="col-span-10 lg:col-span-5 flex justify-end items-center px-2 gap-2">
+        <div class="lg:relative lg:top-[-10px] flex justify-end items-center px-2 gap-2 float-right">
             <div class="w-40">
                 <Select 
                     options={[{ name: 'Show all', value: 'all' }, { name: 'Show empty', value: 'empty' }]}
