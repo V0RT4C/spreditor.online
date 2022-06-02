@@ -50,16 +50,19 @@
                     Recompiling older versions is not supported.
                     <br /><br />
                     <span class="text-primary">Extracting:</span><br />
-                    This tool allows exptracting of sprite files to .PNG image files. This functionality works for all the supported versions.
+                    This tool allows extracting of sprite files to .PNG image files. This functionality works for all the supported versions.
                     <br /><br />
                     <span class="text-primary">How to use:</span><br />
                     To get started, import or create a new .SPR file by clicking the button(s) above.<br />
-                    Once the sprites are extracted you can navigate the different pages of sprites by clicking the buttons or using your keyboard.
+                    Once the sprites are imported you can navigate the different pages of sprites by clicking the buttons or using your keyboard.
                     <br /><br />
                     <span class="text-accent">LEFT ARROW KEY</span>    -> Go to previous page<br />
                     <span class="text-accent">RIGHT ARROW KEY</span>   -> Go to next page<br />
                     <span class="text-accent">F KEY</span>             -> Go to first page<br />
                     <span class="text-accent">L KEY</span>             -> Go to last page<br />
+                    <br />
+                    <br />
+                    If you are on mobile you can <span class="text-accent">SWIPE</span> from <span class="text-accent">left</span> to <span class="text-accent">right</span> to navigate.
                 </p>
             </div>
         </div>
