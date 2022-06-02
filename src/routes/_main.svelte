@@ -2,7 +2,7 @@
     {#each sprites as sprite (sprite.id)}
             <div 
                 on:click={() => dispatch('spriteEdit', sprite)}
-                class="inline-block bg-primary inline-block m-auto border border-solid border-primary rounded-lg cursor-pointer p-2 hover:scale-110 transition-transform duration-100"
+                class="inline-block bg-primary inline-block m-auto border border-solid border-primary rounded-lg cursor-pointer p-1 md:p-2 hover:scale-110 transition-transform duration-100"
             >   
                 {#key refreshDOMToggle}
                     <canvas
