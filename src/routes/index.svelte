@@ -1,3 +1,14 @@
+<svelte:head>
+<title>Open Tibia Sprite Editor</title>
+<meta name="description" content="A Sprite editor for Open Tibia servers. Supports editing/extracting/compiling .SPR files for Tibia versions 3.0 - 10.56.">
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Open Tibia Sprite Editor" />
+<meta property="og:description" content="A Sprite editor for Open Tibia servers. Supports editing/extracting/compiling .SPR files for Tibia versions 3.0 - 10.56." />
+<meta property="og:image" content="https://www.spreditor.online/spr-512x512.png" />
+<meta property="og:url" content="https://www.spreditor.online" />
+<meta property="og:site_name" content="Open Tibia Sprite Editor" />
+</svelte:head>
+
 <MobileDrawer
     show={showDrawer}
     on:close={() => showDrawer = false}
