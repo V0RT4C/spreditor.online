@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-primary: 25, 32, 48;
+    --color-secondary: #1e273a;
+    --color-accent: #bb9cf9;
+    --text-primary: #FFFFFF;
+    --text-secondary: #7c879f;
+    --border-primary: #283041;
+}
+
+*{
+    outline: none;
+}
+
+html {
+    font-size: 16px;
+    @apply font-sans;
+}
+
+body {
+    @apply bg-secondary text-primary;
+}
+
+h1 {
+    font-size: 1.3rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+/* .bg-primary {
+    background-color: #192030;
+}
+
+.bg-secondary {
+    background-color: #1e273a;
+}
+
+.bg-accent {
+    background-color: #bb9cf9;
+}
+
+.text-primary {
+    color: #FFFFFF;
+}
+
+.text-secondary {
+    color: #7c879f;
+}
+
+.text-accent {
+    color: #bb9cf9;
+}
+
+
+.border-primary {
+    border-color: #283041;
+} */
+

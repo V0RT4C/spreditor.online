@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'otstudio';
+  src:  url('fonts/otstudio.eot?lu2cbq');
+  src:  url('fonts/otstudio.eot?lu2cbq#iefix') format('embedded-opentype'),
+    url('fonts/otstudio.ttf?lu2cbq') format('truetype'),
+    url('fonts/otstudio.woff?lu2cbq') format('woff'),
+    url('fonts/otstudio.svg?lu2cbq#otstudio') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'otstudio' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ots-compile:before {
+  content: "\e900";
+}
+.ots-css-file:before {
+  content: "\e901";
+}
+.ots-js-file:before {
+  content: "\e902";
+}
+.ots-html-file:before {
+  content: "\e903";
+}
+.ots-pdf-file:before {
+  content: "\e904";
+}
+.ots-jpg-file:before {
+  content: "\e905";
+}
+.ots-png-file:before {
+  content: "\e906";
+}
+.ots-zip-file:before {
+  content: "\e907";
+}
+.ots-file-zip:before {
+  content: "\e92b";
+}
+.ots-import:before {
+  content: "\e960";
+}
+.ots-export:before {
+  content: "\e961";
+}
+.ots-link:before {
+  content: "\e9cb";
+}
+.ots-bookmark:before {
+  content: "\e9d2";
+}
+.ots-bookmarks:before {
+  content: "\e9d3";
+}
+.ots-star-empty:before {
+  content: "\e9d7";
+}
+.ots-star-half:before {
+  content: "\e9d8";
+}
+.ots-star-full:before {
+  content: "\e9d9";
+}
+.ots-heart:before {
+  content: "\e9da";
+}
+.ots-loop:before {
+  content: "\ea2e";
+}
+.ots-facebook:before {
+  content: "\ea90";
+}
+.ots-facebook-filled:before {
+  content: "\ea91";
+}
