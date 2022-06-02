@@ -3,7 +3,7 @@
         <!-- <button on:click={onAddSprite} class="border border-solid bg-secondary border-primary rounded-lg flex justify-center items-center py-0.5 px-3 cursor-pointer select-none">
             <span class="relative top-[-1px] text-2xl font-bold text-accent">+</span>
         </button> -->
-        <button on:click={onAddSprite} class="relative top-[2px] bg-secondary rounded-lg text-accent text-xs py-2 px-4 border border-solid border-primary font-bold">Add</button>
+        <button on:click={onAddSprite} class="lg:relative lg:top-[2px] bg-secondary rounded-lg text-accent text-xs py-2 px-4 border border-solid border-primary font-bold">Add</button>
     </div>
     {#if hasLoadedSprites}
         <div class="hidden lg:flex items-center justify-center lg:relative lg:top-[15px]">
