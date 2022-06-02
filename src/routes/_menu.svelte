@@ -1,8 +1,9 @@
 <div class={`mt-4 bg-primary w-full border border-solid border-primary rounded-lg p-2 h-16 flex lg:block justify-between items-center`}>
     <div class="lg:relative lg:top-[4px] flex justify-start items-center px-2 float-left">
-        <button on:click={onAddSprite} class="border border-solid bg-secondary border-primary rounded-lg flex justify-center items-center py-0.5 px-3 cursor-pointer select-none">
+        <!-- <button on:click={onAddSprite} class="border border-solid bg-secondary border-primary rounded-lg flex justify-center items-center py-0.5 px-3 cursor-pointer select-none">
             <span class="relative top-[-1px] text-2xl font-bold text-accent">+</span>
-        </button>
+        </button> -->
+        <button on:click={onAddSprite} class="bg-secondary rounded-lg text-accent text-sm py-2 px-4 border border-solid border-primary font-bold">Add</button>
     </div>
     {#if hasLoadedSprites}
         <div class="hidden lg:flex items-center justify-center lg:relative lg:top-[15px]">
@@ -39,6 +40,7 @@ import * as sprEditorStore from './sprEditor.store';
 import type { SpriteEditorStore } from './sprEditor.store';
 import Select from '$lib/components/Select.svelte';
 import { Sprite } from '$lib/sprite/Sprite';
+import { createSnackbar } from '$store/Snackbar.store';
 
 let startIndex : number;
 let endIndex : number;
@@ -58,6 +60,7 @@ const onAddSprite = () => {
         store.sprites = [...store.sprites, new Sprite(store.sprites.length + 1, new Uint8Array(4096))];
         store.spritesToShow = store.sprites.slice(store.spritesToShowStartIndex, store.spritesToShowEndIndex);
         store.sprCount = store.sprites.length;
+        createSnackbar({ message: 'New empty sprite created.' });
         return store;
     });
 }
